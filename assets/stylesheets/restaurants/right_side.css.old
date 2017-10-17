@@ -1,0 +1,808 @@
+.s-9 {
+    width: 75%
+}
+.s-8 {
+    width: 66.66%
+}
+.s-4 {
+    width: 33.33%
+}
+.list-page_top {
+    padding: 10px 0;
+    margin-top: 10px
+}
+.list-page_top .breadcrumbs {
+    margin: 0
+}
+.list-page_sidebar {
+    padding: 20px;
+    background: #fff
+}
+.restoran-item {
+    border: 1px solid #eee;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    -webkit-transition: border .5s ease;
+    -moz-transition: border .5s ease;
+    transition: border .5s ease;
+    position: relative
+}
+.restoran-item:hover {
+    border: 1px solid #c7c7c7
+}
+a.restoran-item:hover .restoran-item_title {
+    color: #669cd6
+}
+.restoran-item_closed {
+    font-size: 11px;
+    line-height: 19px;
+    color: #ffa115;
+    font-weight: 800;
+    margin-bottom: 20px
+}
+.restoran-item_closed i {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 7px
+}
+.restoran-item_closed span {
+    border-bottom: 1px dashed #ffa115
+}
+.restoran-item_image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto
+}
+.restoran-item--user:hover {
+    border: 1px solid #eee
+}
+.restoran-item--user .restoran-item_image {
+    max-width: 200px;
+    margin: 0 auto
+}
+.restoran-item_top {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee
+}
+.restoran-item_title {
+    font-size: 22px;
+    line-height: 26px;
+    font-family: "proxima", "Arial", sans-serif;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+    -webkit-transition: color .4s ease;
+    -moz-transition: color .4s ease;
+    transition: color .4s ease
+}
+.restoran-item_description {
+    font-size: 13px;
+    line-height: 20px;
+    color: #333;
+    font-weight: 400
+}
+.restoran-item_description span {
+    font-weight: 700;
+    color: #959595
+}
+.restoran-item_description span.distance {
+    font-weight: normal;
+    margin-left: 30px;
+    position: relative;
+    color: #a3a3a3
+}
+.restoran-item_description span.distance:before {
+    content: '';
+    width: 12px;
+    height: 14px;
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: -16px;
+    background: url(../../images/sprite.png) no-repeat -685px -448px
+}
+.restoran-item_star-col {
+    font-size: 11px;
+    line-height: 16px;
+    color: #9d9d9d;
+    font-weight: 400;
+    display: block
+}
+.restoran-item_bottom {
+    margin-top: 13px
+}
+.restoran-item_bottom .col {
+    padding: 0 5px
+}
+.restoran-item_sub-titile {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #959595;
+    line-height: 14px;
+    margin-bottom: 10px
+}
+.restoran-item_big {
+    font-size: 17px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 300
+}
+.restoran-item_big i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px
+}
+.restoran-item--close>.s-9 {
+    opacity: .5
+}
+.restoran-item--food-new,
+.restoran-item--food-best,
+.restoran-item--food-bal,
+.restoran-item--promo {
+    position: relative
+}
+.restoran-item--food-new::before,
+.restoran-item--food-best::before,
+.restoran-item--food-bal::before,
+.restoran-item--promo::before {
+    content: "";
+    position: relative;
+    background-image: url("../../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-position: -646px -356px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+.restoran-item--food-new::before {
+    background-position: -562px -456px;
+    width: 80px;
+    height: 80px
+}
+.restoran-item--food-best::before {
+    background-position: -455px -456px;
+    width: 80px;
+    height: 80px
+}
+.restoran-item--food-bal::before {
+    background-position: -347px -456px;
+    width: 80px;
+    height: 80px
+}
+.restoran-item--promo::before {
+    background-position: -646px -356px;
+    width: 80px;
+    height: 80px
+}
+.restoran-item--big {
+    padding-bottom: 0
+}
+.restoran-item--big:hover {
+    border: 1px solid #eee
+}
+.restoran-item_tabs {
+    margin-top: 40px;
+    font-size: 0
+}
+.restoran-item_tabs a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 11px;
+    line-height: 20px;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 45px;
+    background: #fff;
+    border-top: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed
+}
+.restoran-item_tabs a:first-child {
+    -webkit-border-top-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-left: 1px solid #ededed
+}
+.restoran-item_tabs a:last-child {
+    -webkit-border-top-right-radius: 2px;
+    border-top-right-radius: 2px
+}
+.restoran-item_tabs a:hover,
+.restoran-item_tabs a.active {
+    background: #fbf9f9;
+    border-bottom: 1px solid #fbf9f9
+}
+.box-tooltip,
+.h-tooltip {
+    position: relative
+}
+.box-tooltip:hover .b-tooltip,
+.h-tooltip:hover .b-tooltip {
+    display: block
+}
+.h-tooltip:hover .to {
+    opacity: 1
+}
+.rate {
+    margin-bottom: 15px
+}
+.rate i {
+    height: 17px;
+    background-image: url("../../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-position: -805px -156px;
+    width: 17px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2px
+}
+.rate--0--5 i:nth-child(1) {
+    background-position: -10px -82px;
+    width: 18px;
+    height: 16px
+}
+.rate--1 i:nth-child(1) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--1--5 i:nth-child(1) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--1--5 i:nth-child(2) {
+    background-position: -10px -82px;
+    width: 18px;
+    height: 16px
+}
+.rate--2 i:nth-child(1),
+.rate--2 i:nth-child(2) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--2--5 i:nth-child(1) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--2--5 i:nth-child(2) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--2--5 i:nth-child(3) {
+    background-position: -10px -82px;
+    width: 18px;
+    height: 16px
+}
+.rate--3 i:nth-child(1),
+.rate--3 i:nth-child(2),
+.rate--3 i:nth-child(3) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--3--5 i:nth-child(1) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--3--5 i:nth-child(2) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--3--5 i:nth-child(3) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--3--5 i:nth-child(4) {
+    background-position: -10px -82px;
+    width: 18px;
+    height: 16px
+}
+.rate--4 i:nth-child(1),
+.rate--4 i:nth-child(2),
+.rate--4 i:nth-child(3),
+.rate--4 i:nth-child(4) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--4--5 i:nth-child(1) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--4--5 i:nth-child(2) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--4--5 i:nth-child(3) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--4--5 i:nth-child(4) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.rate--4--5 i:nth-child(5) {
+    background-position: -10px -82px;
+    width: 18px;
+    height: 16px
+}
+.rate--5 i:nth-child(1),
+.rate--5 i:nth-child(2),
+.rate--5 i:nth-child(3),
+.rate--5 i:nth-child(4),
+.rate--5 i:nth-child(5) {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.sprite {
+    background-image: url("../../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block
+}
+.sprite.sprite-catalog {
+    background-position: -753px -447px;
+    width: 25px;
+    height: 24px
+}
+.sprite.sprite-instr {
+    background-position: -308px -523px;
+    width: 21px;
+    height: 21px
+}
+.sprite.sprite-fire {
+    background-position: -285px -524px;
+    width: 20px;
+    height: 23px
+}
+.sprite.sprite-burder {
+    background-position: 0 -560px;
+    width: 71px;
+    height: 78px
+}
+.sprite.sprite-mobile {
+    background-position: -79px -560px;
+    width: 72px;
+    height: 78px
+}
+.sprite.sprite-ok {
+    background-position: -159px -560px;
+    width: 59px;
+    height: 78px
+}
+.sprite.sprite-heart {
+    background-position: -256px -524px;
+    width: 22px;
+    height: 22px
+}
+.sprite.sprite-hunger {
+    background-position: -227px -524px;
+    width: 19px;
+    height: 22px
+}
+.sprite.sprite-fav-off {
+    background-position: -771px -514px;
+    width: 12px;
+    height: 16px
+}
+.sprite.sprite-fav-on {
+    background-position: -771px -530px;
+    width: 12px;
+    height: 16px
+}
+.sprite.sprite-ico-appstore {
+    background-position: -10px -10px;
+    width: 238px;
+    height: 52px
+}
+.sprite.sprite-ico-arrow-bottom {
+    background-position: -268px -10px;
+    width: 8px;
+    height: 5px
+}
+.sprite.sprite-ico-arrow-left {
+    background-position: -296px -10px;
+    width: 61px;
+    height: 20px
+}
+.sprite.sprite-ico-big-gift {
+    background-position: -268px -50px;
+    width: 230px;
+    height: 215px
+}
+.sprite.sprite-ico-book {
+    background-position: -10px -285px;
+    width: 65px;
+    height: 64px
+}
+.sprite.sprite-ico-breadcrumbs-end {
+    background-position: -518px -10px;
+    width: 11px;
+    height: 32px
+}
+.sprite.sprite-ico-cart {
+    background-position: -95px -285px;
+    width: 79px;
+    height: 62px
+}
+.sprite.sprite-ico-cart-footer {
+    background-position: -194px -285px;
+    width: 32px;
+    height: 25px
+}
+.sprite.sprite-ico-checkbox {
+    background-position: -377px -10px;
+    width: 11px;
+    height: 9px
+}
+.sprite.sprite-ico-clock--big {
+    background-position: -246px -285px;
+    width: 64px;
+    height: 64px
+}
+.sprite.sprite-ico-clock-orange {
+    background-position: -408px -10px;
+    width: 19px;
+    height: 19px
+}
+.sprite.sprite-ico-close-pop-up {
+    background-position: -330px -285px;
+    width: 32px;
+    height: 32px
+}
+.sprite.sprite-ico-cloud {
+    background-position: -382px -285px;
+    width: 64px;
+    height: 56px
+}
+.sprite.sprite-ico-comment-top {
+    background-position: -466px -285px;
+    width: 33px;
+    height: 30px
+}
+.sprite.sprite-ico-convert {
+    background-position: -447px -10px;
+    width: 12px;
+    height: 8px
+}
+.sprite.sprite-ico-cross {
+    background-position: -479px -10px;
+    width: 8px;
+    height: 8px
+}
+.sprite.sprite-ico-cross-blue {
+    background-position: -194px -335px;
+    width: 24px;
+    height: 24px
+}
+.sprite.sprite-ico-facebook {
+    background-position: -466px -335px;
+    width: 20px;
+    height: 38px
+}
+.sprite.sprite-ico-find {
+    background-position: -10px -393px;
+    width: 32px;
+    height: 32px
+}
+.sprite.sprite-ico-find-content {
+    background-position: -62px -393px;
+    width: 96px;
+    height: 96px
+}
+.sprite.sprite-ico-gift {
+    background-position: -178px -393px;
+    width: 65px;
+    height: 86px
+}
+.sprite.sprite-ico-gift-big {
+    background-position: -263px -393px;
+    width: 64px;
+    height: 61px
+}
+.sprite.sprite-ico-gift-top {
+    background-position: -347px -393px;
+    width: 32px;
+    height: 30px
+}
+.sprite.sprite-ico-googleplay {
+    background-position: -549px -10px;
+    width: 272px;
+    height: 52px
+}
+.sprite.sprite-ico-half {
+    background-position: -10px -82px;
+    width: 18px;
+    height: 16px
+}
+.sprite.sprite-ico-info {
+    background-position: -48px -82px;
+    width: 64px;
+    height: 64px
+}
+.sprite.sprite-ico-info-small {
+    background-position: -92px -511px;
+    width: 35px;
+    height: 35px
+}
+.sprite.sprite-ico-down {
+    background-position: -804px -480px;
+    width: 28px;
+    height: 16px
+}
+.sprite.sprite-ico-right {
+    background-position: -816px -447px;
+    width: 17px;
+    height: 28px
+}
+.sprite.sprite-ico-instagram {
+    background-position: -132px -82px;
+    width: 32px;
+    height: 32px
+}
+.sprite.sprite-ico-timer--blue {
+    background-position: -551px -214px;
+    width: 33px;
+    height: 33px
+}
+.sprite.sprite-ico-mail {
+    background-position: -184px -82px;
+    width: 16px;
+    height: 15px
+}
+.sprite.sprite-ico-message {
+    background-position: -518px -82px;
+    width: 38px;
+    height: 30px
+}
+.sprite.sprite-ico-minus {
+    background-position: -220px -82px;
+    width: 8px;
+    height: 2px
+}
+.sprite.sprite-ico-pizza {
+    background-position: -576px -82px;
+    width: 88px;
+    height: 94px
+}
+.sprite.sprite-ico-plus {
+    background-position: -684px -82px;
+    width: 8px;
+    height: 8px
+}
+.sprite.sprite-ico-point {
+    background-position: -712px -82px;
+    width: 31px;
+    height: 36px
+}
+.sprite.sprite-ico-point-map {
+    background-position: -763px -82px;
+    width: 44px;
+    height: 54px
+}
+.sprite.sprite-ico-rocket {
+    background-position: -132px -156px;
+    width: 65px;
+    height: 64px
+}
+.sprite.sprite-ico-rocket-w {
+    background-position: -10px -156px;
+    width: 16px;
+    height: 16px
+}
+.sprite.sprite-ico-setting {
+    background-position: -217px -156px;
+    width: 24px;
+    height: 24px
+}
+.sprite.sprite-ico-slider-arrow--next {
+    background-position: -518px -156px;
+    width: 16px;
+    height: 28px
+}
+.sprite.sprite-ico-slider-arrow--next--small {
+    background-position: -684px -156px;
+    width: 5px;
+    height: 8px
+}
+.sprite.sprite-ico-slider-arrow--prev {
+    background-position: -709px -156px;
+    width: 17px;
+    height: 28px
+}
+.sprite.sprite-ico-slider-arrow--prev--small {
+    background-position: -746px -156px;
+    width: 5px;
+    height: 8px
+}
+.sprite.sprite-ico-stack {
+    background-position: -771px -156px;
+    width: 14px;
+    height: 16px
+}
+.sprite.sprite-ico-star {
+    background-position: -805px -156px;
+    width: 17px;
+    height: 16px
+}
+.sprite.sprite-ico-support {
+    background-position: -10px -192px;
+    width: 6px;
+    height: 9px
+}
+.sprite.sprite-ico-tel {
+    background-position: -36px -192px;
+    width: 44px;
+    height: 44px
+}
+.sprite.sprite-ico-timer {
+    background-position: -746px -192px;
+    width: 57px;
+    height: 64px
+}
+.sprite.sprite-ico-timer-2 {
+    background-position: -519px -276px;
+    width: 15px;
+    height: 16px
+}
+.sprite.sprite-ico-touch {
+    background-position: -554px -276px;
+    width: 72px;
+    height: 96px
+}
+.sprite.sprite-ico-tr-bottom {
+    background-position: -646px -276px;
+    width: 14px;
+    height: 8px
+}
+.sprite.sprite-ico-tr-top {
+    background-position: -680px -276px;
+    width: 14px;
+    height: 8px
+}
+.sprite.sprite-ico-twitter {
+    background-position: -714px -276px;
+    width: 42px;
+    height: 32px
+}
+.sprite.sprite-ico-viza {
+    background-position: -776px -276px;
+    width: 16px;
+    height: 11px
+}
+.sprite.sprite-ico-vkontakte {
+    background-position: -646px -307px;
+    width: 38px;
+    height: 22px
+}
+.sprite.sprite-ico-with-arrow {
+    background-position: -776px -307px;
+    width: 30px;
+    height: 29px
+}
+.sprite.sprite-lenta-green {
+    background-position: -646px -356px;
+    width: 80px;
+    height: 80px
+}
+.sprite.sprite-lenta-orange {
+    background-position: -347px -456px;
+    width: 80px;
+    height: 80px
+}
+.sprite.sprite-star-full {
+    background-position: -330px -356px;
+    width: 17px;
+    height: 16px
+}
+.sprite-ico-clocker {
+    background: url('../../images/ico-clock-gray.png') no-repeat center;
+    width: 19px;
+    height: 19px
+}
+.box-tooltip:hover .b-tooltip,
+.h-tooltip:hover .b-tooltip {
+    display: block
+}
+.h-tooltip:hover .to {
+    opacity: 1
+}
+.box-tooltip {
+    display: inline-block
+}
+.b-tooltip {
+    display: none;
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    background: #FFF;
+    position: absolute;
+    width: 220px;
+    pointer-events: none;
+    padding: 15px;
+    color: #000;
+    text-align: left;
+    line-height: 14px;
+    z-index: 100;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 1px 9px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 1px 9px;
+    box-shadow: rgba(0, 0, 0, 0.27) 0 1px 9px
+}
+.b-tooltip.tc {
+    bottom: 150%;
+    left: 50%;
+    margin-left: -110px
+}
+.b-tooltip.tl {
+    bottom: 150%;
+    left: -70px
+}
+.b-tooltip.to {
+    bottom: 110%;
+    left: 0;
+    opacity: 0;
+    transition: all .5s ease;
+    display: block
+}
+.b-tooltip.th {
+    bottom: 120%;
+    left: 50%;
+    margin-left: -110px
+}
+.b-tooltip:before {
+    content: '';
+    background: url(../../images/angle.png) no-repeat 0 -23px;
+    width: 50px;
+    height: 23px;
+    display: inline-block;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute
+}
+.b-tooltip.tg:before {
+    content: '';
+    background: url(../../images/angle.png) no-repeat 23px -10px;
+    width: 42px;
+    height: 25px;
+    display: inline-block;
+    top: 20px;
+    left: 0;
+    margin-left: -42px;
+    position: absolute
+}
+.b-tooltip.tg {
+    top: 0;
+    left: 100%;
+    margin-top: -25px
+}

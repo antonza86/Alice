@@ -1,0 +1,132 @@
+body {
+    min-width: 980px;
+}
+.container {
+    max-width: 1170px;
+    min-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto
+}
+.list-page_top {
+    padding: 10px 0;
+    margin-top: 10px
+}
+.row {
+    margin: 0 -5px;
+    padding: 0 5px;
+    display: table;
+    width: 100%
+}
+.row.items {
+    margin: 0 -9px 0 -18px
+}
+.row:after,
+.row:before {
+    content: "";
+    display: table
+}
+.row:after {
+    clear: both
+}
+.s-5 {
+    width: 41.66%
+}
+.s-12 {
+    width: 100%
+}
+.text-right {
+    text-align: right
+}
+.text-right {
+    color: #999;
+    font-size: 12px;
+    padding-top: 5px
+}
+
+.cart-form .select {
+    margin-bottom: 15px;
+    min-height: 46px
+}
+.select.sort {
+    font-size: 12px;
+    display: inline-block;
+    width: 240px;
+    text-align: left;
+    line-height: 20px
+}
+.select.sort a,
+.select.sort li {
+    padding: 8px 15px
+}
+.select.sort ul {
+    top: 36px
+}
+.select {
+    position: relative;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+.select a {
+    padding: 12px 15px;
+    border: 1px solid #eee;
+    color: #656565;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    background: #fff url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+    white-space: nowrap;
+    overflow: hidden
+}
+.select a:focus,
+.select a:active {
+    border: 1px solid #a09f9f;
+    outline: 0
+}
+.select a:focus ul,
+.select a:active ul {
+    display: block
+}
+.select span {
+    max-width: 85%;
+    overflow: hidden;
+    display: block
+}
+.select ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44px;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #a09f9f;
+    display: none;
+    z-index: 10;
+    max-height: 250px;
+    overflow: auto
+}
+.select li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+    overflow: hidden
+}
+.select li:hover {
+    background: #fafafa;
+    cursor: pointer
+}
+.select input {
+    position: absolute
+}
+.select input.combo {
+    left: 1px;
+    top: 1px;
+    width: 85%;
+    border: 0
+}
+.select input.combo:focus {
+    border: 0
+}
+.select input.combo:focus+a {
+    border: 1px solid #a09f9f
+}

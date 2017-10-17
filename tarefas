@@ -1,0 +1,16 @@
+x - Pagina inicial, redicionamento para pagina inicial caso nao exista
+x - Relação entre tabelas: Cidade, restaurante, categoria, produto
+x	- Verificar pelo nome do restaurante
+ - Pagina restaurantes com filtro Cidade
+ - Pagina back office
+ 	- Criação de produtos/catagorias/restaurantes novos
+ 	- Preview da configuração
+ 	- Estatisticas
+ 	- Pagina login
+ 	- Imagens/menus/produtos predefenidas para categorias/produtos
+ 	- Personalisar a pagina
+ 	- Upload image com compress e resize
+ - Adaptação tablet e desktop
+ - Criação da pagina desktop
+ - Show, Active produto, categoria, restaurante
+ - Agendamento do menu(menus diarios)

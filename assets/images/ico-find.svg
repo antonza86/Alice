@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.281" height="27.094" viewBox="0 0 27.281 27.094">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <path id="ico-find" class="cls-1" d="M190.792,87.5l8.486,8.486-2.122,2.121-8.485-8.485Zm-8.306-16.486a10.5,10.5,0,1,1-10.5,10.5A10.5,10.5,0,0,1,182.486,71.013Zm0,3a7.5,7.5,0,1,1-7.5,7.5A7.5,7.5,0,0,1,182.488,74.01Z" transform="translate(-172 -71)"/>
+</svg>

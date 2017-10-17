@@ -1,0 +1,256 @@
+.main-footer {
+    padding: 70px 0 70px
+}
+.main-footer_top {
+    margin-bottom: 40px
+}
+.main-footer_top p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #4f555d;
+    padding-left: 72px
+}
+.main-footer_top span {
+    font-size: 13px;
+    color: #959595
+}
+.main-footer_logo {
+    float: left;
+    margin: 0 13px 0 7px
+}
+.main-footer_logo img {
+    display: block;
+    width: 47px;
+    height: 50px
+}
+.main-footer_nav {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    width: 270px
+}
+.main-footer_nav a {
+    font-size: 14px;
+    color: #4f555d;
+    line-height: 25px;
+    text-decoration: none
+}
+.main-footer_nav a:hover {
+    text-decoration: underline
+}
+.main-footer_ico-link {
+    line-height: 42px;
+    position: relative;
+    font-size: 14px;
+    color: #4f555d;
+    text-decoration: inderline;
+    padding-left: 46px;
+    display: inline-block;
+    vertical-align: top
+}
+.main-footer_ico-link:hover {
+    text-decoration: none
+}
+.main-footer_ico-link:hover::after {
+    opacity: .7
+}
+.main-footer_ico-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../images/sprite.png");
+    background-size: 416px 500px;
+    background-repeat: no-repeat
+}
+.main-footer_founders {
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+    margin-top: 25px;
+    margin-right: 30px;
+    text-align: left;
+    padding-left: 0
+}
+.main-footer_founders p {
+    font-size: 14px;
+    color: #4f555d;
+    line-height: 22px
+}
+p.main-footer_founders {
+    padding-left: 0
+}
+.s-8 {
+    width: 66.66%
+}
+.row {
+    margin: 0 -5px;
+    padding: 0 5px;
+    display: table;
+    width: 100%
+}
+.row.items {
+    margin: 0 -9px 0 -18px
+}
+.row:after,
+.row:before {
+    content: "";
+    display: table
+}
+.row:after {
+    clear: both
+}
+
+.socio-btn {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 0;
+    margin-left: 10px
+}
+.socio-btn.empty {
+    opacity: .2
+}
+.socio-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url("../../images/sprite.png");
+    background-size: 416px 500px;
+    background-repeat: no-repeat
+}
+.socio-btn:first-child {
+    margin-left: 0
+}
+.socio-btn:hover {
+    opacity: .7
+}
+.socio-btn--instagram,
+.socio-footer .socio-btn--instagram:hover {
+    border-color: #427096
+}
+.socio-btn--instagram::after,
+.socio-footer .socio-btn--instagram:hover::after {
+    background-position: -66px -41px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px
+}
+.socio-footer .socio-btn--instagram::after {
+    background-position: -211px -197px
+}
+.socio-btn--twitter,
+.socio-footer .socio-btn--twitter:hover {
+    border-color: #1292e3
+}
+.socio-btn--twitter::after,
+.socio-footer .socio-btn--twitter:hover::after {
+    background-position: -357px -138px;
+    width: 21px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -9px
+}
+.socio-footer .socio-btn--twitter::after {
+    background-position: -234px -197px
+}
+.socio-btn--facebook,
+.socio-footer .socio-btn--facebook:hover {
+    border-color: #335794
+}
+.socio-btn--facebook::after,
+.socio-footer .socio-btn--facebook:hover::after {
+    background-position: -233px -167px;
+    width: 10px;
+    height: 19px;
+    margin-top: -10px;
+    margin-left: -4px
+}
+.socio-footer .socio-btn--facebook::after {
+    background-position: -267px -194px
+}
+.socio-btn--mail {
+    border-color: #335794
+}
+.socio-btn--mail::after {
+    background-position: -396px -254px;
+    width: 20px;
+    height: 20px;
+    margin-top: -9px;
+    margin-left: -9px
+}
+.socio-btn--vk,
+.socio-footer .socio-btn--vk:hover {
+    border-color: #3f70b1
+}
+.socio-btn--vk::after,
+.socio-footer .socio-btn--vk:hover::after {
+    background-position: -323px -153px;
+    width: 19px;
+    height: 12px;
+    margin-top: -5px;
+    margin-left: -9px
+}
+.socio-footer .socio-btn--vk::after {
+    background-position: -286px -199px
+}
+.socio-footer .socio-btn {
+    opacity: .7
+}
+.socio-footer .socio-btn--vk,
+.socio-footer .socio-btn--facebook,
+.socio-footer .socio-btn--twitter,
+.socio-footer .socio-btn--instagram {
+    border-color: #cdcdcd
+}
+.text-right {
+    text-align: right
+}
+.text-right {
+    color: #999;
+    font-size: 12px;
+    padding-top: 5px
+}
+.s-6 {
+    width: 50%
+}
+.btn--grey {
+    color: #6d6d6d;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #ececec;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff
+}
+.btn--grey:hover {
+    border: 1px solid #c7c7c7
+}
+.btn--grey:active {
+    border: 1px solid #ececec
+}
+.btn--footer {
+    padding: 5px 15px;
+    margin-top: 30px
+}
+.ico-convert {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-image: url("../../images/sprite.png");
+    background-size: 416px 500px;
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 15px;
+    background-position: -259px -41px;
+    position: relative;
+    top: -3px
+}

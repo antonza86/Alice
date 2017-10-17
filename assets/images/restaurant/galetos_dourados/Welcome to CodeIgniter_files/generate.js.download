@@ -1,0 +1,8 @@
+$("#generate_btn").click(function() {
+	$("#generate_results").load("generate/code", $("#form").serialize(), function(result) {
+		$("#download_btn").removeClass("hidden");
+	});
+});
+$("#download_btn").click(function() {
+	$.get("generate/download", $("#form").serialize());
+});

@@ -1,0 +1,226 @@
+/////////////////// INSERT CITY ////////////////////////////
+INSERT INTO city(id, name, url_name) VALUES (1, "Aveiro","aveiro");
+INSERT INTO city(id, name, url_name) VALUES (2, "Lisboa","lisboa");
+INSERT INTO city(id, name, url_name) VALUES (3, "Porto","porto");
+INSERT INTO city(id, name, url_name) VALUES (4, "Maia","maia");
+INSERT INTO city(id, name, url_name) VALUES (5, "Cascais","cascais");
+INSERT INTO city(id, name, url_name) VALUES (6, "Seixal","seixal");
+INSERT INTO city(id, name, url_name) VALUES (7, "Almada","almada");
+INSERT INTO city(id, name, url_name) VALUES (8, "Figueira da Foz","figueira_da_foz");
+INSERT INTO city(id, name, url_name) VALUES (9, "Oeiras","oeiras");
+INSERT INTO city(id, name, url_name) VALUES (10, "Linda-a-Velha","linda_a_velha");
+INSERT INTO city(id, name, url_name) VALUES (11, "Sintra","sintra");
+INSERT INTO city(id, name, url_name) VALUES (12, "Odivelas","odivelas");
+
+
+INSERT INTO zona(id, refCity, name) VALUES (1, 1, "Aveiro");
+INSERT INTO zona(id, refCity, name) VALUES (2, 1, "Gafanha de nazare");
+INSERT INTO zona(id, refCity, name) VALUES (3, 1, "Ilhavo");
+INSERT INTO zona(id, refCity, name) VALUES (4, 1, "Gafanha de encarnaçao");
+INSERT INTO zona(id, refCity, name) VALUES (5, 1, "Vagos");
+/////////////////// INSERT RESTAURANT ////////////////////////////
+INSERT INTO restaurant
+(name, url_name, description, extra_info, kitchen, type, min_price, delivery_price, delivery_time, card_payment, special, rate, num_rate, address, tel, gps, schedule, holiday, logo, public, refCity)
+VALUES 
+("Fusoes", "fusoes", "Fusoes description", "Extra_info", "Italiana, moderna, pizzas", "pizzas", "12", "0", "50", "true", "false", "", "", "Rua João Afonso n17", "961110904", "37.100865, -8.35708", "10:00 - 02:00", "7", "../assets/images/old/logo.jpg", 1, 1),
+("Gatupardo", "gatupardo", "Gatupardo description", "Extra_info", "Italiana, moderna, sushi", "sushi", "12", "5", "50", "true", "false", "", "", "Rua João Afonso n17", "961110904", "37.100865, -8.35708", "10:00 - 02:00", "7", "../assets/images/old/1/logo.jpg", 1, 1),
+("Rz", "rz", "Rz description", "Extra_info", "Italiana, moderna, pizzas", "pizzas", "12", "0", "50", "true", "false", "", "", "Rua João Afonso n17", "961110904", "37.100865, -8.35708", "10:00 - 02:00", "7", "../assets/images/old/2/logo.jpg", 1, 1),
+("Atelier de moda", "atelier_moda", "Atelier de moda description", "Extra_info", "Italiana, moderna, pizzas", "pizzas", "12", "0", "50", "true", "false", "", "", "Rua João Afonso n17", "961110904", "37.100865, -8.35708", "10:00 - 02:00", "7", "../assets/images/old/3/logo.jpg", 1, 1);
+
+INSERT INTO delivery_price(id, refRest, refZona, price, bonus, discount) VALUES (1, 1, 1, "0", "0", "0");
+INSERT INTO delivery_price(id, refRest, refZona, price, bonus, discount) VALUES (2, 1, 2, "5", "50", "100");
+INSERT INTO delivery_price(id, refRest, refZona, price, bonus, discount) VALUES (3, 1, 3, "7", "50", "70");
+INSERT INTO delivery_price(id, refRest, refZona, price, bonus, discount) VALUES (4, 1, 4, "5", "50", "100");
+INSERT INTO delivery_price(id, refRest, refZona, price, bonus, discount) VALUES (5, 1, 5, "10", "50", "50");
+
+INSERT INTO cuisine_type(id, name) VALUES (1, "Sushi");
+INSERT INTO cuisine_type(id, name) VALUES (2, "Pizza");
+INSERT INTO cuisine_type(id, name) VALUES (3, "Espetadas");
+INSERT INTO cuisine_type(id, name) VALUES (4, "Bolos");
+INSERT INTO cuisine_type(id, name) VALUES (5, "Hamburgeres");
+INSERT INTO cuisine_type(id, name) VALUES (6, "Americana");
+INSERT INTO cuisine_type(id, name) VALUES (7, "Europea");
+INSERT INTO cuisine_type(id, name) VALUES (8, "Italiana");
+INSERT INTO cuisine_type(id, name) VALUES (9, "Chinesa");
+INSERT INTO cuisine_type(id, name) VALUES (10, "Mexicana");
+INSERT INTO cuisine_type(id, name) VALUES (11, "Exotica");
+INSERT INTO cuisine_type(id, name) VALUES (12, "Japonesa");
+
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (1, 2);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (1, 3);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (1, 10);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (1, 12);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (2, 1);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (2, 6);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (2, 2);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (2, 11);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (3, 9);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (3, 6);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (3, 3);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (3, 12);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (4, 4);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (4, 5);
+INSERT INTO rest_cuisine_type(refRest, refCuisine) VALUES (4, 7);
+
+
+
+/////////////////// INSERT CATEGORY ////////////////////////////
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (1,1,0,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (1,"Pizza","Categoria pizzas","pt",1);
+
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (2,1,1,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (2,"Massa fina","Massa fina","pt",2);
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (3,1,2,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (3,"Massa fofa","Massa fofa","pt",3);
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (4,1,3,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (4,"Vegetariana","Pizza vegetariana","pt",4);
+
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (5,2,0,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (5,"Sushi","Sushi","pt",5);
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (6,2,1,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (6,"Sashimi","Sashimi de peixe fresco","pt",6);
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (7,2,2,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (7,"Niguiri","Niguiri","pt",7);
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (8,2,3,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (8,"Maki","Maki","pt",8);
+
+INSERT INTO category(id, cat, sub_cat, public, refRest) VALUES (9,0,-1,1,1);
+INSERT INTO cat_name(id, name, description, lang, refCat) VALUES (9,"Entradas","Entradas diversas","pt",9);
+
+
+/////////////////// INSERT PRODUCT ////////////////////////////
+
+INSERT INTO product(id, public, refCat) VALUES (1,1,2);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (1, "Pizza margarida", "Pizza margarida", "pt", 1);
+INSERT INTO prod_image(id, url, refProd) VALUES (1,"pizza_margarida.jpg",1);
+
+
+INSERT INTO product(id, public, refCat) VALUES (2,1,2);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (2, "Pizza odin", "Pizza odin", "pt", 2);
+INSERT INTO prod_image(id, url, refProd) VALUES (2,"odin.jpg",2);
+
+INSERT INTO product(id, public, refCat) VALUES (3,1,2);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (3, "Pizza 4 estacoes", "Pizza 4 estacoes", "pt", 3);
+INSERT INTO prod_image(id, url, refProd) VALUES (3,"4_estacoes.jpg",3);
+
+INSERT INTO product(id, public, refCat) VALUES (4,1,3);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (4, "Pizza papperoni", "Pizza papperoni", "pt", 4);
+INSERT INTO prod_image(id, url, refProd) VALUES (4,"papperoni.jpg",4);
+
+INSERT INTO product(id, public, refCat) VALUES (5,1,3);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (5, "Pizza tropical", "Pizza tropical", "pt", 5);
+INSERT INTO prod_image(id, url, refProd) VALUES (5,"tropical.jpg",5);
+
+INSERT INTO product(id, public, refCat) VALUES (6,1,4);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (6, "Pizza vegetariana", "Pizza vegetariana", "pt", 6);
+INSERT INTO prod_image(id, url, refProd) VALUES (6,"vegetariana.jpg",6);
+
+
+INSERT INTO product(id, public, refCat) VALUES (7,1,6);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (7, "Sashimi atum", "Sashimi atum", "pt", 7);
+INSERT INTO prod_image(id, url, refProd) VALUES (7,"sashimi_atum.jpg",7);
+
+INSERT INTO product(id, public, refCat) VALUES (8,1,6);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (8, "Sashimi salmao", "Sashimi salmao", "pt", 8);
+INSERT INTO prod_image(id, url, refProd) VALUES (8,"sashimi_salmao.jpg",8);
+
+INSERT INTO product(id, public, refCat) VALUES (9,1,6);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (9, "Sashimi misto", "Sashimi misto", "pt", 9);
+INSERT INTO prod_image(id, url, refProd) VALUES (9,"sashimi_misto.jpg",9);
+
+INSERT INTO product(id, public, refCat) VALUES (10,1,7);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (10, "Niguiri atum", "Niguiri atum", "pt", 10);
+INSERT INTO prod_image(id, url, refProd) VALUES (10,"niguiri_atum.jpg",10);
+
+INSERT INTO product(id, public, refCat) VALUES (11,1,7);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (11, "Niguiri salmao", "Niguiri salmao", "pt", 11);
+INSERT INTO prod_image(id, url, refProd) VALUES (11,"niguiri_salmao.jpg",11);
+
+INSERT INTO product(id, public, refCat) VALUES (12,1,8);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (12, "Maki salmao", "Maki salmao", "pt", 12);
+INSERT INTO prod_image(id, url, refProd) VALUES (12,"maki_salmao.jpg",12);
+
+INSERT INTO product(id, public, refCat) VALUES (13,1,9);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (13, "Pão", "Pão", "pt", 13);
+INSERT INTO prod_image(id, url, refProd) VALUES (13,"pao.jpg",13);
+
+INSERT INTO product(id, public, refCat) VALUES (14,1,9);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (14, "Sopa", "Sopa", "pt", 14);
+INSERT INTO prod_image(id, url, refProd) VALUES (14,"sopa.jpg",14);
+
+INSERT INTO product(id, public, refCat) VALUES (15,1,9);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (15, "Linguiça", "Linguiça", "pt", 15);
+INSERT INTO prod_image(id, url, refProd) VALUES (15,"linguica.jpg",15);
+
+INSERT INTO product(id, public, refCat) VALUES (16,1,9);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (16, "Azeitonas", "Azeitonas", "pt", 16);
+INSERT INTO prod_image(id, url, refProd) VALUES (16,"azeitonas.jpg",16);
+
+INSERT INTO product(id, public, refCat) VALUES (17,1,9);
+INSERT INTO prod_name(id, name, description, lang, refProd) VALUES (17, "Manitega", "Manitega", "pt", 17);
+INSERT INTO prod_image(id, url, refProd) VALUES (17,"manteiga.jpg",17);
+
+
+INSERT INTO extra_product(id, price, refProd) VALUES (1, "0.15", 4);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (1, "Molho Agri-Doce", "", 1);
+INSERT INTO extra_product(id, price, refProd) VALUES (2, "0.35", 4);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (2, "Molho Alho", "", 2);
+INSERT INTO extra_product(id, price, refProd) VALUES (3, "0.25", 4);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (3, "Ketchup", "", 3);
+INSERT INTO extra_product(id, price, refProd) VALUES (4, "0.50", 4);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (4, "Queijo", "", 4);
+
+INSERT INTO extra_product(id, price, refProd) VALUES (5, "0.15", 7);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (5, "Bacon", "", 5);
+INSERT INTO extra_product(id, price, refProd) VALUES (6, "0.65", 7);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (6, "Queijo", "", 6);
+INSERT INTO extra_product(id, price, refProd) VALUES (7, "0.75", 7);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (7, "Fiambre", "", 7);
+
+INSERT INTO extra_product(id, price, refProd) VALUES (8, "0.10", 10);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (8, "Limão", "", 8);
+INSERT INTO extra_product(id, price, refProd) VALUES (9, "0", 10);
+INSERT INTO extra_product_name(id, name, description, refExtraProd) VALUES (9, "Gelo", "", 9);
+
+
+INSERT INTO user_commerce(id, name, type, username, password, tel, email, nif) VALUES (1,"No menu", "1", "nomenu", "123", "919191919", "geral@nomenu.pt", "234659874");
+
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (1, "10.5", 1, 1, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (2, "4.5", 1, 2, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (3, "5.5", 1, 3, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (4, "13", 1, 4, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (5, "10", 1, 5, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (6, "16.5", 1, 6, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (7, "10.5", 1, 7, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (8, "12", 1, 8, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (9, "10.5", 1, 9, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (10, "11", 1, 10, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (11, "10.5", 1, 11, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (12, "10.5", 1, 12, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (13, "5", 1, 13, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (14, "10.5", 1, 14, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (15, "2.5", 1, 15, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (16, "10.5", 1, 16, 1);
+INSERT INTO user_prod(id, price, public, refProd, refUser) VALUES (17, "2", 1, 17, 1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

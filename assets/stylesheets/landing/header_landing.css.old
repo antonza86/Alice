@@ -1,0 +1,162 @@
+.logo img {
+    width: 232px;
+    height: 40px;
+    margin-bottom: 10px
+}
+.logo p {
+    font-size: 10px;
+    line-height: 12px;
+    color: #646464;
+    text-transform: uppercase
+}
+.logo a {
+    color: #646464;
+    text-decoration: none
+}
+.logo a:hover {
+    opacity: .8
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    margin: 0
+}
+body {
+    min-width: 980px;
+}
+.container {
+    max-width: 1170px;
+    min-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto
+}
+.main-header_bottom {
+    background: #669cd6;
+    text-align: center
+}
+
+.header_text {
+    height: 40px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "proxima", "Arial", sans-serif;
+    margin: 15px 25px 10px 0;
+    vertical-align: top
+}
+
+.header_box {
+    height: 40px;
+    display: inline-block;
+    margin: 15px 0 10px 0;
+    text-align: left
+}
+.header_box>div {
+    float: left;
+    margin: 0!important
+}
+
+.header_city .tooltip_title {
+    line-height: 38px;
+    background: #fff;
+    border-radius: 20px 0 0 20px;
+    display: inline-block;
+    padding: 0 25px 0 30px;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #eee;
+}
+.header_city .tooltip_content::before {
+    left: 50px
+}
+.header_street {
+    position: relative
+}
+.header_street input {
+    background: #fff;
+    height: 40px;
+    padding: 0 15px;
+    width: 280px;
+    border-top: 0;
+    border-bottom: 0;
+    border: 1px solid #eee;
+}
+.header_street input:focus {
+    border: 1px solid #97df35
+}
+.header_street a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 32px;
+    padding-left: 10px
+}
+.header_street a:hover {
+    text-decoration: underline
+}
+.header_street a.selected {
+    background: #f5f5f5
+}
+.header_house input {
+    border: 0;
+    background: #fff;
+    height: 40px;
+    padding: 0 20px 0 10px;
+    width: 85px;
+    border-radius: 0 20px 20px 0;
+    text-align: center
+}
+.header_house input:focus {
+    border: 1px solid #97df35
+}
+.header_button {
+    float: left;
+    height: 40px;
+    margin-left: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: #97df35;
+    border-radius: 20px;
+    transition: all .5s ease
+}
+.header_button:hover {
+    background: #8dc63f
+}
+.tooltip_new {
+    position: relative;
+    display: inline-block;
+    vertical-align: top
+}
+.tooltip_title {
+    font-size: 13px;
+    line-height: 21px;
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding-right: 10px;
+    color: #fff
+}
+.tooltip_title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 19px;
+    height: 19px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-position: -262px -3px
+}
